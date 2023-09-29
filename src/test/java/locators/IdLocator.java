@@ -3,8 +3,9 @@ package locators;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.edge.EdgeDriver;
 
 public class IdLocator {
     //By ID
@@ -12,8 +13,8 @@ public class IdLocator {
     public static void main(String[] args) throws InterruptedException {
         //Etsy Title Verification
         //1. Open a browser
-        WebDriverManager.firefoxdriver().setup();
-        WebDriver driver = new FirefoxDriver();
+        WebDriverManager.edgedriver().setup();
+        WebDriver driver = new EdgeDriver();
 
         //2. Go to https://www.etsy.com
         driver.get("https://www.etsy.com");

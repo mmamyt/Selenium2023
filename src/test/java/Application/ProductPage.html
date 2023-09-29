@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Credit Card Product List</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    .visa-signature {
+      background-color: #ffcc00;
+      color: white;
+    }
+
+    .visa-platinum {
+      background-color: #00aaff;
+      color: white;
+    }
+
+    .visa-reward {
+      background-color: #006600;
+      color: white;
+    }
+  </style>
+  <script>
+    function navigateToProduct(product) {
+      // Perform the desired navigation based on the selected product
+      if (product === 'visa-signature') {
+        window.location.href = 'Credit Card.html';
+      } else if (product === 'visa-platinum') {
+        window.location.href = 'visa_platinum.html';
+      } else if (product === 'visa-reward') {
+        window.location.href = 'visa_reward.html';
+      }
+    }
+  </script>
+</head>
+<body>
+<div class="container">
+  <h1>Credit Card Product List</h1>
+  <ul>
+    <li class="visa-signature" onclick="navigateToProduct('visa-signature')">Visa Signature</li>
+    <li class="visa-platinum" onclick="navigateToProduct('visa-platinum')">Visa Platinum</li>
+    <li class="visa-reward" onclick="navigateToProduct('visa-reward')">Visa Reward</li>
+  </ul>
+</div>
+</body>
+</html>

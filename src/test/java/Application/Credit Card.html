@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tech Nova Bank Credit Card Application Form</title>
+    <style>
+    body {
+      background-color: #f2f2f2;
+    }
+
+    form {
+      width: 600px;
+      margin: 0 auto;
+      padding: 30px;
+      background-color: #ffffff;
+      border-radius: 30px;
+    }
+
+    form[id="loginForm"]{
+     width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 30px;
+      background-color: lightblue;
+
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      margin-top: 16px;
+
+
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    h1{
+    color: blue;}
+
+    button[id="loginButton"]{
+     background-color: blue
+
+    }
+
+  </style>
+</head>
+<body>
+
+<label for="creditCardAPR">Credit Card APR: <button id="creditCardAPR" style="cursor: help;">Hover over to view APR</button></label>
+
+<button style="color: white"  type="submit" value="Submit" id="loginButton"  onClick="navigateToLogin()">LOGIN</button>
+
+
+
+
+<p align="center">********************</p>
+
+
+<form>
+    <h1>Tech Nova Bank Credit Card Application</h1>
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="confirmEmail">Confirm Email Address:</label>
+    <input type="email" id="confirmEmail" name="confirmEmail" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="text" id="phone" name="phone" required>
+
+    <label for="ssn">SSN:</label>
+    <input type="text" id="ssn" name="ssn" required>
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" required>
+
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" required>
+
+    <label for="state">State:</label>
+    <select id="state" name="state" required>
+        <option value="">Select State</option>
+        <option value="AL">Alabama</option>
+        <option value="AK">Alaska</option>
+        <option value="AZ">Arizona</option>
+        <!-- Add more states here -->
+    </select>
+
+    <label for="zip">Zip Code:</label>
+    <input type="text" id="zip" name="zip" required>
+
+    <label for="country">Country:</label>
+    <select id="country" name="country" required>
+        <option value="">Select Country</option>
+        <option value="US">United States</option>
+        <option value="CA">Canada</option>
+        <option value="UK">United Kingdom</option>
+        <!-- Add more countries here -->
+    </select>
+
+    <label for="language">Preferred Language:</label>
+    <select id="language" name="language" required>
+        <option value="">Select Language</option>
+        <option value="en">English</option>
+        <option value="es">Spanish</option>
+        <option value="fr">French</option>
+        <!-- Add more languages here -->
+    </select>
+
+    <label for="income">Income:</label>
+    <input type="text" id="income" name="income" required>
+
+
+
+    <label for="employment">Employment:</label>
+    <select id="employment" name="employment" required>
+        <option value="">Select Employment</option>
+        <option value="employed">Employed</option>
+        <option value="unemployed">Unemployed</option>
+        <option value="selfEmployed">Self-employed</option>
+        <!-- Add more employment options here -->
+    </select>
+
+    <label for="education">Education:</label>
+    <select id="education" name="education" required>
+        <option value="">Select Education</option>
+        <option value="highSchool">High School</option>
+        <option value="college">College</option>
+        <option value="graduate">Graduate</option>
+    </select>
+
+    <p></p>
+      <input type="submit" value="Submit" id="submit" name="submit">
+    </form>
+
+
+
+    <script>
+      // Add any additional JavaScript code here if needed
+      // For example, you can add event listeners or validations
+
+      // Example: Displaying the credit card APR on hover
+      var creditCardAPR = document.getElementById('creditCardAPR');
+      creditCardAPR.addEventListener('mouseover', function() {
+        alert('The Annual Percentage Rate (APR) is the annualized interest rate applied to your credit card balance.');
+      });
+
+
+      function navigateToLogin(){
+
+        window.location.href="LoginBox.html";
+      }
+
+
+
+
+
+    </script>
+  </body>
+  </html>
