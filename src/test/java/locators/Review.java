@@ -10,7 +10,7 @@ public class Review {
         // DriverManager => set up the browser
         //  get() => opens url
         //  getTitle() => gets page title
-        //  navigate().To() => opes a url
+        //  navigate().To() => opens a url
         // driver.manage().window().maximize(); => maximizes the page
         // quit() => closes all opens tabs
         // close() => closes the current open window
@@ -44,7 +44,12 @@ public class Review {
         // sendKeys(Keys.END) => scroll to the bottom of the screen
         // sendKeys(Keys.HOME) => scroll to the beginning/top of the screen
         // contextClick() => right Click
-        //
+        // Alerts class => helps us to handle JS Alerts
+        // ActionsObj.switch().To().Alert =>
+        // objName.dismiss()
+        // objName.accept()
+        // objName.getText()
+        // objName.SendKeys()
 
 
 

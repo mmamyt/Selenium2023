@@ -14,13 +14,16 @@ public class BuyCar {
         WebDriverManager.edgedriver().setup();
         WebDriver driver = new EdgeDriver();
 
-        driver.get("https://www.carbyu.com/");
+        driver.get("file:///Users/kamol/Desktop/MyBank/src/LoginPage.html");
+        driver.manage().window().maximize();
+        driver.findElement(By.id("username")).sendKeys("admin");
+        driver.findElement(By.id("password")).sendKeys("password");
+        driver.findElement(By.xpath("//button[text()='Become A Member']")).click();
 
-        Select select = new Select(driver.findElement(By.xpath("//*[@id='searchByFilterType']")));
-        select.selectByVisibleText("Certified");
 
-        select = new Select(driver.findElement(By.xpath("//*[@id='searchByFilterYear']")));
-        select.selectByVisibleText("2015");
+
+
+
 
 
     }
