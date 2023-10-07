@@ -50,6 +50,18 @@ public class Review {
         // objName.accept()
         // objName.getText()
         // objName.SendKeys()
+        //
+        // Waits
+        // WindowHandle
+        // JSExecutors
+        // iFrame
+        //////
+        // TestNG
+        // JUnit
+        // Cucumber BDD (Gherkin syntax) + POM: Page Object Model Design
+        // Full Test Automation Framework Design
+
+
 
 
 
